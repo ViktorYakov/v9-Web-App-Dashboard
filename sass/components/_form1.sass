@@ -1,0 +1,62 @@
+#form-1,
+#form-2
+	padding-top: 30px
+
+	#fieldset-1,
+	#fieldset-2
+		width: 90%
+		border: none
+		@include respond-to(tablet)
+			width: 95%
+
+		legend
+			padding-bottom: 20px
+
+		.legend
+			text-align: center
+			text-shadow: 1px 1px 1px
+			font-weight: 700
+
+		#userMessage
+			width: 94%
+			height: 130px
+			border: 2px solid $form-elements-borders
+			border-radius: 6px
+			background-color: $form-elements-backgr
+			outline: none
+
+		#search2
+			width: 96%
+			height: 35px
+			border: 2px solid $form-elements-borders
+			border-radius: 6px
+			background-color: $form-elements-backgr
+			outline: none
+
+		.invisible
+			display: none
+
+		#sendButton
+			width: 100%
+			height: 40px
+			border-radius: 5px
+			margin-top: 10px
+			background: $purple
+			color: $white
+			@include respond-to(tablet)
+				width: 96%				
+				
+.alertMsg
+	background: ghostwhite
+	position: relative
+	z-index: 100000
+	border-radius: 20px
+	text-align: center
+	width: 92%
+	height: 15px
+	padding: 7px
+	float: left
+	flex-direction: column
+	font-size: 0.9em
+	font-weight: 700
+	margin: 2px

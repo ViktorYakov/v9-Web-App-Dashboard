@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>Web App Dashboard</title>
+		<meta charset="utf-8">
+		<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	  <link href="css/main.css" rel="stylesheet" type="text/css" />
+	  <link rel="stylesheet" type="text/css" href="css/toggle-switch.css"/>
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<header id="main-header" role="banner">
+			<ul class="element">
+				<li id="your-app"><a><b>Your</b><i>App&trade;</i></a></li>
+				<li id="icon-bell"><a><img src="img/icon-bell.svg" alt="bell-icon"><div id="dot"></div></a></li>
+				<li id="profile-picture"><a><img src="img/Viko.jpg" alt="profile-photo"></a><div id="name">Viktor Yakov</div></li>
+			</ul>
+			<div id="notificationPopUp">
+				<div id="notificationTitle">Your Notifications</div>
+				<div><img src="img/1.jpg" alt="Alfons Breneman profile picture"><p><b>Alfons Breneman:</b>Shared photo 3 minutes ago.</p></div>
+				<div><img src="img/2.jpg" alt="Alisia Bingerman profile picture"><p><b>Alisia Bingerman:</b>Liked your video 6 hours ago.</p></div>
+				<div><img src="img/3.jpg" alt="Hilda Armstrong profile picutre"><p><b>Hilda Armstrong:</b>Commented on your article 3 hours ago</p></div>
+			</div>
+		</header>
+
+		<nav id="main-nav" role="navigation">
+			<a href="#"><img class="navImg" src="img/icon-dashboard.svg" alt="dashboard-icon"></a>
+			<a href="#"><img class="navImg" src="img/icon-members.svg" alt="members-icon"></a>
+			<a href="#"><img class="navImg" src="img/icon-visits.svg" alt="settings-icon"></a>
+			<a href="#"><img class="navImg" src="img/icon-settings.svg" alt="visits-icon"></a>
+		</nav>
+	<main role="main">
+	<div id="widgets">
+			<ul class="element">
+				<li id="dashboard">Dashboard</li>
+				<li id="searchbox"><input id="search1" class="search" type="search" name="#" placeholder="Search" aria-labelledby="searchUser"><img id="magnifyingGlass" src="img/search.svg" alt="search magnifying glass"><p id="searchUser" class="invisible">You can search for users in the site within this field.</p></li>
+			</ul>
+			<div id="alert">!Alert you've unreaded notifications<img id="xIcon" src='img/x.svg' alt="closing button"></div>
+
+		<div id="container-1">
+				<ul id="trafficData">
+					<li><a>TRAFFIC</a></li>
+					<li><a class="click">Hourly</a></li>
+					<li><a>Daily</a></li>
+					<li><a>Weekly</a></li>
+					<li><a>Monthly</a></li>
+				</ul>
+			<!-- <div id="asd"> -->
+				<canvas id="lineChart1"></canvas>
+				<canvas class="notDisplay" id="lineChart2"></canvas>
+				<canvas class="notDisplay" id="lineChart3"></canvas>
+				<canvas class="notDisplay" id="lineChart4"></canvas>
+			<!-- </div> -->
+		</div>
+
+		<div id="container-2">
+			<div id="card-5">
+				<strong id="dailyTraffic">Daily Traffic</strong>
+				<!-- <div>	 -->	
+					<canvas id="barChart" width="200" height="200"></canvas>
+				<!-- </div> -->
+			</div>	
+			<div id="card-6">
+				<strong id="mobileUsers">Mobile Users</strong>
+				<!-- <div>		 -->		
+					<canvas id="doughChart"></canvas>
+				<!-- </div> -->
+			</div>
+		</div>
+		<div id="container-3">
+			<h1 id="socialStats">Social Stats</h1>
+			<ul id="socialIcons">
+				<li>
+					<a>
+						<h1 class="socialMedia">Facebook</h1>
+						<img src="img/icon-facebook.svg" alt="facebook icon">
+					</a>
+					<p class="socialData">10,392</p>
+				</li>
+				<li>
+					<a>
+						<h1 class="socialMediaTwi">Twitter</h1>
+						<img src="img/icon-twitter.svg" alt="twitter icon">
+					</a>
+					<p class="socialData">9,192</p>
+				</li>
+				<li>
+					<a>
+						<h1 class="socialMedia">Google+</h1>
+						<img src="img/icon-google-plus.svg" alt="google plus icon">
+					<p class="socialData">1,022</p>
+					</a>
+				</li>
+				<li>
+					<a>
+						<h1 class="socialMedia">Instagram</h1>
+						<img src="img/icon-instagram.svg" alt="youtube logo">
+					</a>
+					<p class="socialData">212</p>
+				</li>
+				<li>
+					<a>
+						<h1 class="socialMedia">Linkedin</h1>
+						<img src="img/icon-linkedin.svg" alt="android logo">
+					</a>
+					<p class="socialData">6,726</p>
+				</li>
+				<li>
+					<a>
+						<h1 class="socialMedia">Pinterest</h1>
+						<img src="img/icon-pinterest.svg" alt="apple logo">
+					</a>
+					<p class="socialData">115</p>
+				</li>
+			</ul>
+		</div>
+		<div id="container-4">
+			<div id="card-1">
+				<h1 class="h1">New Members</h1>
+				<div class="newMembers">
+					<img class="userPictures" src="img/1.jpg" alt="Alfonos Breneman profile picture">
+					<h2 class="membersNames">Alfonso Breneman</h2>
+					<h3 class="regData">10/15/15</h3>
+					<a class="userEmail" href="#">alfonso@fake.com</a>
+				</div>
+				<div class="newMembers">
+					<img class="userPictures" src="img/2.jpg" alt="Alisia Bingerman profile picture">
+					<h2 class="membersNames">Alisia Bingerman</h2>
+					<h3 class="regData">10/15/15</h3>
+					<a class="userEmail" href="#">alisia@fake.com</a>
+				</div>
+				<div class="newMembers">
+					<img class="userPictures" src="img/3.jpg" alt="Hilda Armstrong profile picture">
+					<h2 class="membersNames">Hilda Armstrong</h2>
+					<h3 class="regData">10/15/15</h3>
+					<a class="userEmail" href="#">hilda@fake.com</a>
+				</div>
+				<div class="newMembers">
+					<img class="userPictures" src="img/4.jpg" alt="Friedrich Nietzsche profile picture">
+					<h2 class="membersNames">Friedrich Nietzsche</h2>
+					<h3 class="regData">10/15/15</h3>
+					<a class="userEmail" href="#">friedrich@fake.com</a>
+				</div>
+			</div>
+
+			<div id="card-2">
+				<h1 class="h1">Recent Activity</h1>
+				<div class="memberActions">
+					<img class="userPictures" src="img/1.jpg" alt="Alfonos Breneman profile picture">
+					<h2 class="membersPosts">Alfonso Breneman:<br><b>Commended YourApp's Seo Tips</b></h2>
+					<h3 class="recentActivity">4 hours ago</h3>
+					<img class="rightArrow" src="img/right-arrow.svg" alt="Right Arrow icon">
+				</div>
+				<div class="memberActions">
+					<img class="userPictures" src="img/2.jpg" alt="Alisia Bingerman profile picture">
+					<h2 class="membersPosts">Alisia Bingerman:<br><b>Like the post Facebook's Changes</b></h2>
+					<h3 class="recentActivity">10 hours ago</h3>
+					<img class="rightArrow" src="img/right-arrow.svg" alt="Right Arrow icon">
+				</div>
+				<div class="memberActions">
+					<img class="userPictures" src="img/3.jpg" alt="Hilda Armstrong profile picture">
+					<h2 class="membersPosts">Hilda Armstrong:<br><b>Commented on Facebook's Changes</b></h2>
+					<h3 class="recentActivity">1 day ago</h3>
+					<img class="rightArrow" src="img/right-arrow.svg" alt="Right Arrow icon">
+				</div>
+				<div class="memberActions">
+					<img class="userPictures" src="img/4.jpg" alt="Friedrich Nietzsche profile picture">
+					<h2 class="membersPosts">Friedrich Nietzsche:<br><b>Posted philosophy article</b></h2>
+					<h3 class="recentActivity">1 week ago</h3>
+					<img class="rightArrow" src="img/right-arrow.svg" alt="Right Arrow icon">
+				</div>
+			</div>
+		</div>
+		<div id="container-5">
+			<div id="card-3">
+				<form id="form-1">
+					<fieldset id="fieldset-1">
+						<legend class="legend">MESSAGE USER</legend>
+						<label for="search2"></label>
+						<input id="search2" class="search" type="search" name="#" placeholder="Search for User" aria-labelledby="searchUsers">
+						<p id="searchUsers" class="invisible">You can search for users in the site within this field</p>
+					</fieldset>
+					<fieldset id="fieldset-2">
+						<textarea id="userMessage" placeholder="Message for User"></textarea>
+						<p class="alertMsg"></p>
+						<button id="sendButton" type="submit" aria-describedby="hint">SEND</button>
+									<!-- <div class="alertMsg"></div> -->
+                  <p id="hint" class="invisible">When you press the button you'll send message to the selected user.</p>   
+					</fieldset>
+				</form>							
+			</div>
+
+			<div id="card-4">
+					<form id="form-2">
+						<fieldset id="fieldset-3">
+							<legend class="legend">RECENT ACTIVITY</legend>
+	            <label class="switch-light switch-ios" onclick="" for="email">
+	                <input id="email" type="checkbox" name="email" aria-labelledby="clickTheButton">
+	                <strong id="strong1">Send Email Notifications</strong>
+								  <span class="toggleButton">
+								    <span>Off</span>
+								    <span>On</span>
+								    <a></a>
+								  </span>							
+							</label>
+							<p id="clickTheButton" class="invisible">Click the button  to switch off or to, switch on email notifications</p>
+							<label class="switch-light switch-ios" onclick="" for="public">
+							    <input id="public" type="checkbox" name="public" aria-labelledby="clickOnOff">
+							    <strong id="strong2">Set Profile to Public</strong>
+								  <span class="toggleButton">
+								    <span>Off</span>
+								    <span>On</span>
+								    <a></a>
+								  </span>
+	            </label>
+	            <p id="clickOnOff" class="invisible">Click the button to switch off or to ,switch on profilce privacy.</p>
+            </fieldset>
+            <fieldset id="fieldset-4">
+	            <select id="timezone" name="select">
+	                <option value="-12">(GMT-12:00) International Date Line West</option>
+	                <option value="-11">(GMT-11:00) Midway Island, Samoa</option>
+	                <option value="-10">(GMT-10:00) Hawaii</option>
+	                <option value="-9">(GMT-09:00) Alaska</option>
+	                <option value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
+	                <option value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
+	                <option value="-6">(GMT-06:00) Central America</option>
+	                <option value="-6">(GMT-06:00) Central Time (US & Canada)</option>
+	                <option value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>
+	                <option value="-4">(GMT-04:00) Atlantic Time (Canada)</option>
+	                <option value="-3">(GMT-03:00) Buenos Aires, Georgetown</option>
+	                <option value="-2">(GMT-02:00) Mid-Atlantic</option>
+	                <option value="-1">(GMT-01:00) Cape Verde Is.</option>
+	                <option value="0" selected>(GMT+00:00) London</option>
+	                <option value="1">(GMT+01:00) Amsterdam, Berlin, Rome, Stockholm</option>
+	                <option value="2">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia</option>
+	                <option value="3">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+	                <option value="4">(GMT+04:00) Abu Dhabi, Muscat</option>
+	                <option value="5">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+	                <option value="6">(GMT+06:00) Almaty, Novosibirsk</option>
+	                <option value="7">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+	                <option value="8">(GMT+08:00) Beijing, Chongqing, Hong Kong</option>
+	                <option value="9">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+	                <option value="9">(GMT+09:00) Seoul</option>
+	                <option value="10">(GMT+10:00) Brisbane</option>
+	                <option value="11">(GMT+11:00) Magadan</option>
+	                <option value="12">(GMT+12:00) Auckland, Wellington</option>
+	            </select>
+	            <label id="timezoneLabel" for="timezone">Select Timezone</label>	       
+            </fieldset>
+            <button type="button" id="saveButton">Save</button>
+	          <button type="button" id="cancelButton">Cancel</button>
+        	</form>
+		  	</div>
+	  	</div>
+	  </div>
+	 </main>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script   src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js"   integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo="   crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script>	
+		<script type="text/javascript" src="js/charts.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>

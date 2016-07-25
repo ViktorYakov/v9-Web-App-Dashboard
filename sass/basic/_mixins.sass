@@ -1,0 +1,18 @@
+//Media querie 
+@mixin respond-to($media)  
+	@if $media == mobile 
+		@media (min-width: 320px)  
+			@content	
+	
+	@else if $media == tablet 
+		@media (min-width: 768px)  
+			@content
+	
+	@else if $media == desktop 
+		@media (min-width: 1024px)  
+			@content 
+	
+@mixin vertical_align 
+	position: relative
+	top: 50%
+	transform: translateY(-50%)

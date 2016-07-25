@@ -1,0 +1,34 @@
+#dashboard
+	flex: 1
+	align-self: center
+	padding-left: 16px
+	font-size: 15px
+	text-shadow: 1px 1px 1px
+	font-weight: 700
+	@include respond-to(tablet)
+		font-size: 20px
+
+#searchbox
+	display: flex 
+	flex-direction: row-reverse
+	flex: 6
+	padding-right: 16px
+	margin-left: 15px
+	background: $search-box-background
+	border-left: solid $search-box-borders
+	border-bottom: solid $search-box-borders
+	border-width: 1.5px
+
+	input[type="search"]
+		width: 200px
+		height: 25px
+		align-self: center
+		border-radius: 6px
+		outline: none
+		border: 2px solid $dashboard-search-border
+
+#magnifyingGlass
+	width: 25px
+	position: relative
+	left: 190px
+	cursor: pointer

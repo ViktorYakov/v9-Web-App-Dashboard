@@ -1,0 +1,43 @@
+#notificationPopUp
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	max-width: 320px
+	height: 280px
+	z-index: 200
+	position: relative
+	margin: auto
+	background:	$form-elements-backgr
+	opacity: 0.9
+	border: 2px solid $black
+	border-radius: 8px
+	padding: 10px
+	@include respond-to(tablet)
+		left: 27%
+		width: 300px
+		height: 360px
+
+#notificationPopUp div
+	display: flex
+
+#notificationPopUp img
+	flex: 1 0 
+	margin-right: 10px
+	border-radius: 13px
+
+#notificationTitle
+	height: 30px
+	background: $purple
+	color: $white
+	padding: 15px 0 0 5px
+	border-radius: 12px
+
+#notificationPopUp p
+	flex: 0 0 70%
+	background-color: $grey
+	border-radius: 6px
+	font-size: 0.9em
+	padding: 9px
+	@include respond-to(tablet)
+		margin-top: 0
+

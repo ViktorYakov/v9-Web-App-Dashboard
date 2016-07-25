@@ -1,0 +1,89 @@
+#main-nav
+	height: 50px
+	background: $main-nav-background
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	@include respond-to(tablet)
+		height: 100vh !important
+		width: 85px !important
+		flex-direction: column !important
+		align-items: flex-start !important
+		justify-content: inherit !important
+		float: left !important
+		position: fixed !important
+		z-index: 0 !important
+		top: 0 !important
+		opacity: 1 !important
+		
+	// @include respond-to(desktop)
+	// 	min-height: 228vh
+
+// #main-nav a
+// 	margin: auto
+// 	// padding: 10px 
+// 	@include respond-to(tablet)
+// 		margin: 40px 0 20px 0
+// 		// padding: 5px 2px 5px 44px
+
+#main-nav a
+	display: flex
+	@include respond-to(tablet)
+		padding: 20px 0 20px 0
+
+#main-nav a:nth-child(1)
+	@include respond-to(tablet)
+		padding-top: 90px
+
+#main-nav a img
+	opacity: 0.4
+	width: 45px
+	height: 32px
+
+.selected
+	border-top: 4px solid $nav-left-brd-color
+	transition: .25s ease-out
+	padding-top: 10px
+	@include respond-to(tablet)
+		border-left: 4px solid $nav-left-brd-color
+		border-top: none
+		// padding: 5px 16px 5px 32px
+		transition: .25s ease-out
+		// align-self: flex-end
+		padding-left: 35px
+		padding-top: 0
+		margin-left: 1px
+		// height: 32px
+		// width: 32px
+
+
+// #main-nav 
+// 	background: $main-nav-background
+// 	display: flex
+// 	flex-direction: row
+// 	@include respond-to(tablet)
+// 		min-height: 2120px
+// 		width: 85px
+// 		flex-direction: column
+// 		float: left
+// 		align-items: flex-end
+// 	// @include respond-to(desktop)
+// 	// 	min-height: 228vh
+
+
+// #main-nav a
+// 	margin: auto
+// 	padding: 10px
+// 	@include respond-to(tablet)
+// 		margin: 20px 0 20px 0
+// 		padding: 5px 2px 5px 44px
+
+
+
+// .selected
+// 	@include respond-to(tablet)
+// 		border-left: 4px solid green
+// 		// padding: 5px 16px 5px 32px
+
+// #main-nav a img
+// 	float: right 
